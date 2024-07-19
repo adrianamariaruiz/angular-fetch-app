@@ -1,0 +1,14 @@
+<div class="main__container">
+  <h1>Rick and Morty with Angular 18</h1>
+  <div class="main__container--cards">
+    @if(characters$ | async; as characters){
+      @for(character of characters; track character.id){
+        @defer (on viewport) {
+          <app-character-card [character]="character" [characterInfo]="characterInfo[character.id]" (loaded)="makeApiCall($event)"/>
+        }@placeholder {
+          <div class="placeholder"></div>
+        }
+      }
+    }
+  </div>
+</div>

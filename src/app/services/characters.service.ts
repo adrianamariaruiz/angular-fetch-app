@@ -7,7 +7,7 @@ import { CharacterAdapter } from '../adapters/character.adapter';
 @Injectable({
   providedIn: 'root'
 })
-export class CharactersServiceService {
+export class CharactersService {
   private mainUrl = "https://rickandmortyapi.com/api/";
   private charactersUrl = this.mainUrl + 'character';
 

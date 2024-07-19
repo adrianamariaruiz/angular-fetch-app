@@ -1,0 +1,12 @@
+@let characterLocal = character();
+@let characterInfoLocal = characterInfo();
+
+<div class="card__container">
+  @if (characterLocal) {
+    <h2>{{characterLocal.name}}</h2>
+    <img [ngSrc]="characterLocal.image" [alt]="characterLocal.name" width="200" height="200"/>
+    <p>Specie: {{characterLocal.species}}</p>
+    <p>Origin: {{characterLocal.origin.name}}</p>
+    <!-- <p>{{characterInfoLocal | json}}</p> -->
+  }
+</div>

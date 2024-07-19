@@ -1,0 +1,20 @@
+.placeholder{
+  width: 220px;
+  height: 220px;
+}
+.main__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.main__container--cards{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+h1{
+  color: #fff;
+}
